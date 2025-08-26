@@ -1,19 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
-    <h2>Hello Website</h2>
-    
+    <header class="header my-[24px]">
+        <nav class="w-[95%] mb-[20px] mx-auto flex justify-between ">
+            <div class="nav-logo flex gap-[5px]">
+                <img src="assets/logo.png" class="h-[50px] w-[50px]" alt="" srcset="">
+                <h1 class="font-inter text-[#006747] font-black w-[50%]">Emergency Service</h1>
+            </div>
+            <div class="nav-links flex gap-[20px]">
+
+                <div
+                    class="h-[52px] flex items-center font-bold font-inter justify-center rounded-[50px] gap-[5px] w-[123px] bg-[#41FF6B1A]">
+                    0 <img src="assets/heart.png" class="h-[30px] w-[30px]" alt="" srcset=""></div>
+                <div
+                    class="h-[52px] flex items-center font-bold font-inter justify-center rounded-[50px] gap-[5px] w-[123px] bg-[#41FF6B1A]">
+                    100 <img src="assets/coin.png" class="h-[30px] w-[30px]" alt="" srcset=""></div>
+                <div
+                    class="h-[52px] flex items-center text-white font-semibold font-inter justify-center rounded-[50px] gap-[5px] w-[127px] bg-[#00A63E]">
+                    2 <span class=" font-[18px] text-white font-inter">Copy</span></div>
+
+
+            </div>
+        </nav>
+
+        <section class="banner text-white w-[100%]">
+            <div
+                class="hero py-[20px] px-[20px] flex flex-col gap-[15px] items-centers bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+                <img src="assets/logo-dark.png" class="h-[92px] w-[92px]" alt="">
+                <h1 class="text-[40px] font-black">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class="text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by
+                    Government of the People’s Republic of Bangladesh</p>
+            </div>
+        </section>
+    </header>
+    <main class="bg-[#F5FF6] h-[500px] font-inter flex w-[95%] mx-auto justify-between">
+        <div class="sections-cards">
+            <div class="card p-[32px] bg-white gap-[20px] rounded-[12px] shadow-md ">
+                <div class="card-header flex justify-between items-center">
+                    <div class=" rounded-[20px] p-[15px] bg-[#FFE3E2]">
+                        <img src="assets/emergency.png" class="h-[32px] w-[32px]" alt="" srcset="">
+                    </div>
+                    <div class="icon text-[30px] text-[#4F4F4F]"> <i class="fa-regular fa-heart"></i></div>
+                </div>
+                <div class="text-group">
+                    <h2 class="text-2xl font-bold font-inter">National Emergency Number</h2>
+                    <p class="text-[#828282] text-[18px] font-inter">National Emergency </p>
+                </div>
+                
+                <div class="dial-group">
+                    <h2 class="text-2xl font-bold font-inter">999</h2>
+                    <p class="w-[55px] p-[5px] text-center bg-[#F2F2F2] rounded-[16px]">All</p>
+                </div>
+
+                <div class="btn-group flex justify-between">
+                    <button class="btn bg-white rounded-[8px] w-[49%]"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn bg-[#219635] text-white rounded-[8px] w-[49%]"><i class="fa-solid fa-phone"></i>
+                        Call</button>
+                </div>
+            </div>
+        </div>
+        <div class="history p-[24px] gap-[16px] flex flex-col items-center  bg-white shadow-md rounded-[12px] mb-[20px]">
+            <div class="history-head w-[100%] flex justify-between items-center">
+                <h1 class="font-inter"><span><i class="fas-solid fa-clock"></i></span> Call History</h1>
+                <button class="btn font-inter rounded-[50px] text-white bg-[#00A63E] h-[52px] w-[114px]">Clear</button>
+            </div>
+            <div class="history-cards">
+                <div class="history-card flex  justify-between items-center p-[16px] h-[83px] w-[352px] bg-[#F2F2F2] rounded-[8px] font-inter">
+                    <div class="text-content">
+                        <h2 class="font-bold text-[18px]">Fire Service Number</h2>
+                        <p class="text-[#4F4F4F]">999</p>
+                    </div>
+                    <div class="time"><p>11:38:58 AM</p></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
