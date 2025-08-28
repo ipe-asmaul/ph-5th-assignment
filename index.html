@@ -25,13 +25,13 @@
 
                 <div
                     class="h-[52px] flex items-center font-bold font-inter justify-center rounded-[50px] gap-[5px] w-[123px] bg-[#41FF6B1A]">
-                    0 <img src="assets/heart.png" class="h-[30px] w-[30px]" alt="" srcset=""></div>
+                    <span id="love-text">0</span> <img src="assets/heart.png" class="h-[30px] w-[30px]" alt="" srcset=""></div>
                 <div
                     class="h-[52px] flex items-center font-bold font-inter justify-center rounded-[50px] gap-[5px] w-[123px] bg-[#41FF6B1A]">
-                    100 <img src="assets/coin.png" class="h-[30px] w-[30px]" alt="" srcset=""></div>
+                    <span id="coins-text">100</span> <img src="assets/coin.png" class="h-[30px] w-[30px]" alt="" srcset=""></div>
                 <div
                     class="h-[52px] flex items-center text-white font-semibold font-inter justify-center rounded-[50px] gap-[5px] w-[127px] bg-[#00A63E]">
-                    2 <span class=" font-[18px] text-white font-inter">Copy</span></div>
+                    <span id="copy-text">0</span> <span class=" font-[18px] text-white font-inter">Copy</span></div>
 
 
             </div>
@@ -47,46 +47,20 @@
             </div>
         </section>
     </header>
-    <main class="bg-[#F5FF6] h-[500px] font-inter flex w-[95%] mx-auto justify-between">
-        <div class="sections-cards">
-            <div class="card p-[32px] bg-white gap-[20px] rounded-[12px] shadow-md ">
-                <div class="card-header flex justify-between items-center">
-                    <div class=" rounded-[20px] p-[15px] bg-[#FFE3E2]">
-                        <img src="assets/emergency.png" class="h-[32px] w-[32px]" alt="" srcset="">
-                    </div>
-                    <div class="icon text-[30px] text-[#4F4F4F]"> <i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="text-group">
-                    <h2 class="text-2xl font-bold font-inter">National Emergency Number</h2>
-                    <p class="text-[#828282] text-[18px] font-inter">National Emergency </p>
-                </div>
-                
-                <div class="dial-group">
-                    <h2 class="text-2xl font-bold font-inter">999</h2>
-                    <p class="w-[55px] p-[5px] text-center bg-[#F2F2F2] rounded-[16px]">All</p>
-                </div>
+    <main class="bg-[#F5FF6] font-inter flex w-[95%] gap-[30px] mx-auto justify-between">
+        <div class="sections-cards grid grid-cols-3 gap-[30px] mb-[20px]">
 
-                <div class="btn-group flex justify-between">
-                    <button class="btn bg-white rounded-[8px] w-[49%]"><i class="fa-regular fa-copy"></i>
-                        Copy</button>
-                    <button class="btn bg-[#219635] text-white rounded-[8px] w-[49%]"><i class="fa-solid fa-phone"></i>
-                        Call</button>
-                </div>
-            </div>
+
+
+
+ 
         </div>
         <div class="history p-[24px] gap-[16px] flex flex-col items-center  bg-white shadow-md rounded-[12px] mb-[20px]">
             <div class="history-head w-[100%] flex justify-between items-center">
-                <h1 class="font-inter"><span><i class="fas-solid fa-clock"></i></span> Call History</h1>
-                <button class="btn font-inter rounded-[50px] text-white bg-[#00A63E] h-[52px] w-[114px]">Clear</button>
+                <h1 class="font-inter"><span><i class="fa-solid fa-clock"></i></span> Call History</h1>
+                <button class="btn font-inter rounded-[50px] text-white bg-[#00A63E] h-[52px] w-[114px]" id="clear-btn">Clear</button>
             </div>
-            <div class="history-cards">
-                <div class="history-card flex  justify-between items-center p-[16px] h-[83px] w-[352px] bg-[#F2F2F2] rounded-[8px] font-inter">
-                    <div class="text-content">
-                        <h2 class="font-bold text-[18px]">Fire Service Number</h2>
-                        <p class="text-[#4F4F4F]">999</p>
-                    </div>
-                    <div class="time"><p>11:38:58 AM</p></div>
-                </div>
+            <div class="history-cards flex flex-col gap-[8px]" id="history-cards-holder">
             </div>
 
         </div>
