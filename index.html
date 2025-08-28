@@ -16,8 +16,8 @@
 
 <body>
     <header class="header my-[24px]">
-        <nav class="w-[95%] mb-[20px] mx-auto flex justify-between ">
-            <div class="nav-logo flex gap-[5px]">
+        <nav class="w-[95%] mb-[20px] mx-auto flex  flex-col justify-between   md:flex-row lg:flex-row gap-[10px]">
+            <div class="nav-logo flex gap-[5px] items-center">
                 <img src="assets/logo.png" class="h-[50px] w-[50px]" alt="" srcset="">
                 <h1 class="font-inter text-[#006747] font-black w-[50%]">Emergency Service</h1>
             </div>
@@ -47,14 +47,8 @@
             </div>
         </section>
     </header>
-    <main class="bg-[#F5FF6] font-inter flex w-[95%] gap-[30px] mx-auto justify-between">
-        <div class="sections-cards grid grid-cols-3 gap-[30px] mb-[20px]">
-
-
-
-
- 
-        </div>
+    <main class="bg-[#F5FF6] font-inter flex w-[95%] gap-[30px] mx-auto justify-between flex-col md:flex-col lg:flex-row">
+        <div class="sections-cards grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-[30px] mb-[20px]"></div>
         <div class="history p-[24px] gap-[16px] flex flex-col items-center  bg-white shadow-md rounded-[12px] mb-[20px]">
             <div class="history-head w-[100%] flex justify-between items-center">
                 <h1 class="font-inter"><span><i class="fa-solid fa-clock"></i></span> Call History</h1>
