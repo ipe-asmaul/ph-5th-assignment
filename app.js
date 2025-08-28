@@ -144,7 +144,7 @@ window.addEventListener('load', () => {
            
             btn.addEventListener('click', (e) => {
                 if(coinTextDefault >= 20){
-                alert(`Service name: ${detailsOfHotLineService[index].title} Number: ${detailsOfHotLineService[index].number}`);
+                alert(`Calling ${detailsOfHotLineService[index].title} at ${detailsOfHotLineService[index].number}`);
                 historySection.innerHTML += `                <div class="history-card flex  justify-between items-center p-[16px] h-[83px] w-[352px] bg-[#F2F2F2] rounded-[8px] font-inter">
                     <div class="text-content">
                         <h2 class="font-bold text-[18px]">${detailsOfHotLineService[index].title}</h2>
@@ -157,7 +157,7 @@ window.addEventListener('load', () => {
                
             }
             else{
-                alert("Not Eonugh coin to make a call");
+                alert("Not Eonugh coin to make a call. You need atleast 20 coins...");
                 return;
             }
               
