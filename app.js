@@ -139,11 +139,11 @@ window.addEventListener('load', () => {
     let copyBtn = document.getElementsByClassName('copy-btn');
     let loveBtn = document.getElementsByClassName('love-btn');
 
-            Array.from(callBtn).forEach((btn, index) => {
-            
-           
-            btn.addEventListener('click', (e) => {
-                if(coinTextDefault >= 20){
+    Array.from(callBtn).forEach((btn, index) => {
+
+
+        btn.addEventListener('click', (e) => {
+            if (coinTextDefault >= 20) {
                 alert(`Calling ${detailsOfHotLineService[index].title} at ${detailsOfHotLineService[index].number}`);
                 historySection.innerHTML += `                <div class="history-card flex  justify-between items-center p-[16px] h-[83px] w-[352px] bg-[#F2F2F2] rounded-[8px] font-inter">
                     <div class="text-content">
@@ -152,23 +152,23 @@ window.addEventListener('load', () => {
                     </div>
                            <div class="time"><p>${getCurrentTime()}</p></div>
                 </div>`;
-                 coinText.innerText = coinTextDefault - 20;
-                 coinTextDefault = coinTextDefault - 20;
-               
+                coinText.innerText = coinTextDefault - 20;
+                coinTextDefault = coinTextDefault - 20;
+
             }
-            else{
+            else {
                 alert("Not Eonugh coin to make a call. You need atleast 20 coins...");
                 return;
             }
-              
-            })
+
         })
-  
+    })
 
 
-  
 
-    
+
+
+
 
 
     Array.from(copyBtn).forEach((btn, index) => {
