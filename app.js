@@ -145,7 +145,7 @@ window.addEventListener('load', () => {
         btn.addEventListener('click', (e) => {
             if (coinTextDefault >= 20) {
                 alert(`Calling ${detailsOfHotLineService[index].title} at ${detailsOfHotLineService[index].number}`);
-                historySection.innerHTML += `                <div class="history-card flex  justify-between items-center p-[16px] h-[83px] w-[352px] bg-[#F2F2F2] rounded-[8px] font-inter">
+                historySection.innerHTML += `                <div class="history-card flex  justify-between items-center p-[16px] h-[83px] gap-[50px] w-[100%] bg-[#F2F2F2] rounded-[8px] font-inter">
                     <div class="text-content">
                         <h2 class="font-bold text-[18px]">${detailsOfHotLineService[index].title}</h2>
                         <p class="text-[#4F4F4F]">${detailsOfHotLineService[index].number}</p>
